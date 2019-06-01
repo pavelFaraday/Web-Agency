@@ -477,7 +477,7 @@ nav ul li a:hover {
 
 #filler-contact {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-     url(img/filler.jpg) no-repeat center / cover;
+     url(img/filler.jpg) no-repeat center fixed / cover;
      display: flex;
      align-items: baseline;
      justify-content: space-between;   /* on horiz. line */
@@ -513,5 +513,104 @@ nav ul li a:hover {
 }
 
 /* --- END Filler Section --- */
+
+
+
+
+
+
+
+
+/* ---  Post Section --- */
+#posts {
+    background: #beb7a4;
+    padding: 20px 0 80px 0;
+}
+
+.post-container {
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+.post-item {
+    background-color: #e0e2db;
+    color: #191716;
+    margin: 20px 0;
+}
+
+#posts img {
+    width: 100%;
+    display: block;
+}
+
+.img-container {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+.img-container .fas {
+    /* დაცენტრება - ქვემოთ ოთხივე ხაზი */
+    position: absolute;
+    top: 50%;                                 
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.1rem;
+    color: #e6af2e;
+    transition: opacity 3s;
+    opacity: 0;
+}
+
+.img-container:hover img{
+    opacity: 0.4;
+}
+
+.img-container:hover .fas{
+    opacity: 1;
+}
+
+.text-container {
+    padding: 10px 5px 30px 5px;
+}
+
+.text-container p {
+    margin: 15px 0 25px 0;
+}
+
+.text-container a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 5px;
+    border: 2px solid #e6af2e;
+    color: #e6af2e;
+    margin-bottom: 20px;
+}
+
+.text-container a:hover {
+    background-color: #191716;
+    border-color: #191716;
+}
+
+
+/* --- for tablets --- */
+@media screen and (min-width: 576px) {
+    .post-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1rem;
+    }
+}
+
+/* --- for desktops --- */
+@media screen and (min-width: 992px) {
+    .post-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 1rem;
+    }
+
+
+
+
+/* --- END  Post Section --- */
 
 
