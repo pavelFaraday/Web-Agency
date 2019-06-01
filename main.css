@@ -313,8 +313,37 @@ nav ul li a:hover {
     border-color: #191716;
     color: #e6af2e;
 }
-
 /* -- END single service -- */
+
+/* -- for large screen tablets an desktops  */
+
+@media screen and (min-width:776px) {
+    .services-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* ადგილების შეცვლა - ბოლო ორს (3,4) შევუცვალეთ ადგილები, რათა ჭადრაკის დაფის ეფექტი მიგვეღო */
+    /* The :nth-of-type(n) selector matches every element that is the nth child, of a particular type, of its parent.
+       n can be a number, a keyword, or a formula. */
+    .services-container .service-item:nth-of-type(1) {
+        order:1
+    }
+    .services-container .service-item:nth-of-type(2) {
+        order:2
+    }
+    .services-container .service-item:nth-of-type(3) {
+        order:4
+    }
+    .services-container .service-item:nth-of-type(4) {
+        order:3
+    }
+}
+
+
+
+
+
 /* ---END Services Section --- */
 
 
