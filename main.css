@@ -465,9 +465,53 @@ nav ul li a:hover {
     }
 }
 
-
-
 /*  --- END PROJECTS section ---  */
 
+
+
+
+
+
+
+/* --- Filler Section --- */
+
+#filler-contact {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+     url(img/filler.jpg) no-repeat center / cover;
+     display: flex;
+     align-items: baseline;
+     justify-content: space-between;   /* on horiz. line */
+     flex-wrap: wrap;
+     padding: 4rem;
+}
+
+#filler-contact h1 {
+    font-size: 2.5rem;
+    color: #e0e2db;
+    text-transform: uppercase;
+    margin: 0px auto 15px auto;
+}
+
+#filler-contact button {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    color: #e6af2e;
+    border: 2px solid #e6af2e;
+    padding: 10px 15px;
+    background: transparent;
+    margin: 0 auto;
+}
+
+#filler-contact button:hover {
+    background: #e6af2e;
+    color: #191716;
+}
+
+#filler-contact h1 span {
+    color: red;
+    font-size: 4rem;
+}
+
+/* --- END Filler Section --- */
 
 
